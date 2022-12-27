@@ -47,41 +47,56 @@ class MainActivity : AppCompatActivity() {
         sub.setOnClickListener {
             var s2 = inputnum2.text.toString()
             var s1 = inputnum1.text.toString()
+            if( s1 == "" || s2 == "" ){
+                warning()
+            }else{
             var num1 = s1.toInt()
             var num2 = s2.toInt()
             var result:Int = num1 - num2
             outputresult.text = result.toString()
-            alert()
+            alert()}
         }
 
         divide.setOnClickListener {
             var s2 = inputnum2.text.toString()
             var s1 = inputnum1.text.toString()
+            if( s1 == "" || s2 == "" ){
+                warning()
+            }else{
             var num1 = s1.toInt()
             var num2 = s2.toInt()
             var result:Int = num1 / num2
             outputresult.text = result.toString()
-            alert()
+            alert()}
         }
 
         multi.setOnClickListener {
             var s2 = inputnum2.text.toString()
             var s1 = inputnum1.text.toString()
+            if( s1 == "" || s2 == "" ){
+                warning()
+            }else{
             var num1 = s1.toInt()
             var num2 = s2.toInt()
             var result:Int = num1 * num2
             outputresult.text = result.toString()
             alert()
         }
+        }
 
         mod.setOnClickListener {
             var s2 = inputnum2.text.toString()
             var s1 = inputnum1.text.toString()
+            if( s1 == "" || s2 == "" ){
+                warning()
+            }else{
             var num1 = s1.toInt()
             var num2 = s2.toInt()
             var result:Int = num1 % num2
             outputresult.text = result.toString()
             alert()
+            }
+
         }
     }
 }
